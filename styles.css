@@ -1,0 +1,486 @@
+@font-face {
+    font-family: "Final";
+    src: url(fonts/HighwindItalic-xKeR.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO BANNER */ 
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), #3087d8ce), url(img/eorzea-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+.logo{
+    width: 90px;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+.banner-text{
+    text-align: center;
+    color: rgba(125, 157, 250);
+    padding-top: 50px;
+}
+.banner-text h1{
+    font-size: 150px;
+    font-family: "Final", sans-serif;
+
+    
+}
+.banner-text p{
+    font-size: 60px;
+    font-family: "Final", sans-serif;
+    
+}
+
+/* ESTILO HEADER */
+
+.encabezado{
+    background:rgba(49, 192, 248, 0.295);
+   
+}
+
+.encabezado nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.encabezado nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(9, 214, 241);
+    padding: 12px 20px;
+    display: block;
+    font-family: "Final";
+    font-size: 37px;
+    
+
+}
+
+a:hover{
+    background-color: rgba(35, 144, 177, 0.479);
+}
+
+.encabezado nav ul li ul{
+    display: none;
+    
+}
+
+.encabezado nav ul li:hover>ul{
+    display: inline-block;
+}
+
+/* INICIO */
+
+#Inicio{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #3087d85d;
+}
+
+.texto-inicio{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.texto-inicio p{
+    margin: auto;
+    font-size: 30px;
+    color: black; 
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+
+}
+
+.texto-inicio h1{
+    font-size: 60px;
+    font-family: "Final";
+    color: rgba(125, 157, 250);
+    padding-top: 50px;
+    
+}
+
+.texto-inicio{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.presentacion-box{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    background-color: #3087d87e;
+    border-radius: 10%;
+    
+
+}
+
+.presentacion{
+    flex-basis: 50%;
+}
+
+.fotopresentacion{
+    flex-basis: 50%;
+    margin: auto;
+    
+
+}
+
+.fotopresentacion img{
+    width: 70%;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 770px) {
+    .presentacion{
+        flex-basis: 100%;
+    }
+
+    .presentacion-box{
+        font-size: 25px;
+    }
+
+    .fotopresentacion{
+        flex-basis: 100%;
+    }
+    .fotopresentacion img{
+        flex-basis: 100%;
+    }
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .logo{
+        width: 60px;
+    }
+
+}
+
+
+/*--CIUDADES--*/
+#Inicio{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+
+.cajaciudades{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.cities{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.cities img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0.5),#3087d848);
+    opacity: 0;
+    transition: 1s;
+   
+}
+
+.cities:hover .overlay{
+    opacity: 1;
+}
+
+.descripcion{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr{
+    background: #ffffff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.descripcion p{
+    font-size: 20px;
+}
+
+.cities:hover .descripcion{
+    bottom: 40%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px) { 
+  .cities{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+.descripcion p{
+    font-size: 12px;
+}
+hr{
+    margin: 5px auto;
+}
+.cities:hover .descripcion{
+    bottom: 25% !important;
+}
+.desc-grid{
+    font-style: normal;
+}
+
+/*--- GRIDANIA ---*/
+#gridania{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+.texto-inicio img{
+    width: 90px;
+    position: relative;
+    top: 5%;
+    right: 1%;
+}
+
+
+.cajagridania{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.cajagrid{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.cajagrid img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) { 
+    .cajagrid{
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+/*---ULDAH---*/
+#uldah{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+.texto-inicio img{
+    width: 90px;
+    position: relative;
+    top: 5%;
+    right: 1%;
+}
+
+
+.cajauldah{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.caja-ul{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.caja-ul img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) { 
+    .caja-ul{
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  /*--LIMSA-LOMINSA--*/
+  #limsa-lominsa{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+.texto-inicio img{
+    width: 90px;
+    position: relative;
+    top: 5%;
+    right: 1%;
+}
+
+
+.cajauldah{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.caja-ul{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.caja-ul img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) { 
+    .caja-ul{
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  /*--ISHGARD--*/
+  #ishgard{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+.texto-inicio img{
+    width: 90px;
+    position: relative;
+    top: 5%;
+    right: 1%;
+}
+
+
+.cajauldah{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.caja-ul{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.caja-ul img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) { 
+    .caja-ul{
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+}
+
+/*--SOBRE MI--*/
+#sobre-mi{
+    width: 100%;
+    padding: 70px 0;
+    background: #1e477569;
+}
+.texto-inicio img{
+    width: 90px;
+    position: relative;
+    top: 5%;
+    right: 1%;
+}
+
+
+.cajauldah{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.caja-ul{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.caja-ul img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 770px) { 
+    .caja-ul{
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+}
